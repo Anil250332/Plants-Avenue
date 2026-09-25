@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants Avenue - Landing Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f5f7f2;
+            color: #0f2e24;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-arch {
+            border-top-left-radius: 190px;
+            border-top-right-radius: 190px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-[#0d3b2e] text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <a href="#" class="flex items-center gap-2.5 text-2xl font-serif font-bold text-white tracking-tight">
+                <div
+                    class="w-6 h-6 rounded-full bg-[#d96b43] flex items-center justify-center text-[#0d3b2e] shrink-0 font-bold">
+                    <i class="ri-add-line text-lg font-bold text-[#0d3b2e]"></i>
+                </div>
+                <span>Plants Avenue</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-200">
+                <a href="#home" class="text-white hover:text-[#d96b43] transition">Home</a>
+                <a href="#shop" class="hover:text-white transition">Shop</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#blog" class="hover:text-white transition">Blog</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-5 text-gray-200 text-xl">
+                <a href="#wishlist" aria-label="Wishlist" class="hover:text-[#d96b43] transition">
+                    <i class="ri-heart-line"></i>
+                </a>
+                <a href="#cart" aria-label="Cart" class="hover:text-[#d96b43] transition">
+                    <i class="ri-shopping-bag-3-line"></i>
+                </a>
+                <a href="#account" aria-label="Account" class="hover:text-[#d96b43] transition">
+                    <i class="ri-user-3-line"></i>
+                </a>
+            </div>
+
+            <details class="md:hidden group relative">
+                <summary class="list-none p-2 text-white cursor-pointer">
+                    <i class="ri-menu-line text-2xl"></i>
+                </summary>
+                <div
+                    class="absolute right-0 top-10 w-48 bg-[#0a2e24] border border-[#13493a] rounded-xl shadow-lg p-3 space-y-2 text-sm">
+                    <a href="#home" class="block px-3 py-1.5 text-white hover:bg-[#0d3b2e] rounded">Home</a>
+                    <a href="#shop"
+                        class="block px-3 py-1.5 text-gray-300 hover:text-white hover:bg-[#0d3b2e] rounded">Shop</a>
+                    <a href="#about"
+                        class="block px-3 py-1.5 text-gray-300 hover:text-white hover:bg-[#0d3b2e] rounded">About</a>
+                    <a href="#blog"
+                        class="block px-3 py-1.5 text-gray-300 hover:text-white hover:bg-[#0d3b2e] rounded">Blog</a>
+                    <a href="#contact"
+                        class="block px-3 py-1.5 text-gray-300 hover:text-white hover:bg-[#0d3b2e] rounded">Contact</a>
+                </div>
+            </details>
+
+        </div>
+    </header>
+
+    <section id="home" class="bg-[#0d3b2e] text-white pt-10 pb-16 lg:pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+                        Bring The Nature <br class="hidden sm:inline">
+                        Close To You
+                    </h1>
+                    <p class="text-gray-300 text-sm sm:text-base max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
+                        Enhance your space with our indoor and herb plants. Experience the calming effect of greenery,
+                        right at home.
+                    </p>
+                    <div class="pt-2 flex justify-center lg:justify-start">
+                        <a href="#shop"
+                            class="inline-flex items-center gap-3 bg-[#d96b43] hover:bg-[#c45a33] text-white font-medium px-7 py-3 rounded-full transition shadow-md">
+                            <span>Discover Now</span>
+                            <span
+                                class="w-6 h-6 bg-white text-[#d96b43] rounded-full flex items-center justify-center font-bold text-sm">
+                                <i class="ri-arrow-right-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div
+                        class="absolute top-8 left-2 sm:left-8 lg:-left-4 z-10 bg-[#0d3b2e]/90 border border-emerald-700/60 text-white rounded-full px-4 py-2 shadow-lg">
+                        <span class="text-[10px] block text-gray-300 uppercase font-medium">Price</span>
+                        <span class="text-xl font-bold font-serif">₹8</span>
+                    </div>
+
+                    <div
+                        class="w-full max-w-xs sm:max-w-sm aspect-[4/5] hero-arch bg-[#13493a] p-2.5 shadow-2xl border-2 border-[#1c5a4a] overflow-hidden">
+                        <img src="./images/hero-plant.jpg" alt="Indoor Plant"
+                            class="w-full h-full object-cover hero-arch">
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-[#1a4f40] mt-16 pt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div
+                        class="w-11 h-11 rounded-full bg-[#184a3b] flex items-center justify-center text-[#d96b43] text-xl shrink-0 border border-emerald-600/30">
+                        <i class="ri-truck-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-base text-white">Free Delivery</h3>
+                        <p class="text-gray-300 text-xs mt-1">Free shipping around the world for all orders over $120
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div
+                        class="w-11 h-11 rounded-full bg-[#184a3b] flex items-center justify-center text-[#d96b43] text-xl shrink-0 border border-emerald-600/30">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-base text-white">Safe Payment</h3>
+                        <p class="text-gray-300 text-xs mt-1">With our payment gateway, don't worry about your
+                            information</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div
+                        class="w-11 h-11 rounded-full bg-[#184a3b] flex items-center justify-center text-[#d96b43] text-xl shrink-0 border border-emerald-600/30">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-base text-white">Friendly Services</h3>
+                        <p class="text-gray-300 text-xs mt-1">You have 30-day return guarantee for every single order
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-14 sm:py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+
+                <div
+                    class="bg-[#e9eee4] rounded-3xl p-8 sm:p-12 flex items-center justify-between shadow-sm min-h-[240px] sm:min-h-[270px]">
+                    <div class="space-y-4 max-w-[60%]">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">BIG SALE
+                            PRODUCTS</span>
+                        <h3 class="text-3xl sm:text-4xl font-serif font-bold text-[#0f2e24] leading-tight">
+                            Indoor<br>Plants
+                        </h3>
+                        <a href="#shop"
+                            class="inline-block text-xs font-bold uppercase tracking-widest text-[#0f2e24] border-b-2 border-[#0f2e24] pb-1 hover:text-[#d96b43] hover:border-[#d96b43] transition pt-2">
+                            SHOP NOW
+                        </a>
+                    </div>
+                    <div class="w-40 h-40 sm:w-52 sm:h-52 shrink-0 overflow-hidden rounded-3xl shadow-sm">
+                        <img src="./images/cat-indoor.jpg" alt="Indoor Plants" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#e9eee4] rounded-3xl p-8 sm:p-12 flex items-center justify-between shadow-sm min-h-[240px] sm:min-h-[270px]">
+                    <div class="space-y-4 max-w-[60%]">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">TOP PRODUCTS</span>
+                        <h3 class="text-3xl sm:text-4xl font-serif font-bold text-[#0f2e24] leading-tight">
+                            Herbal<br>Plants
+                        </h3>
+                        <a href="#shop"
+                            class="inline-block text-xs font-bold uppercase tracking-widest text-[#0f2e24] border-b-2 border-[#0f2e24] pb-1 hover:text-[#d96b43] hover:border-[#d96b43] transition pt-2">
+                            SHOP NOW
+                        </a>
+                    </div>
+                    <div class="w-40 h-40 sm:w-52 sm:h-52 shrink-0 overflow-hidden rounded-3xl shadow-sm">
+                        <img src="./images/cat-herbal.jpg" alt="Herbal Plants" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="py-12">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center space-y-3 mb-10">
+                <h2 class="text-3xl font-serif font-bold text-[#0f2e24]">Our Products</h2>
+                <div class="flex flex-wrap items-center justify-center gap-2 pt-1">
+                    <span
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold bg-[#0f2e24] text-white cursor-pointer">WHAT'S
+                        NEW</span>
+                    <span
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-300 text-gray-700 cursor-pointer">BEST
+                        SELLERS</span>
+                    <span
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-300 text-gray-700 cursor-pointer">CUSTOMER
+                        FAVORITES</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-1.jpg" alt="Homalomena Rubescens"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Homalomena Rubescens</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-2.jpg" alt="Licuala Grandis"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Licuala Grandis</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-3.jpg" alt="Fiddle Leaf Fig"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Fiddle Leaf Fig</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-4.jpg" alt="Homalomena Rubescens"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Homalomena Rubescens</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-5.jpg" alt="Licuala Grandis"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Licuala Grandis</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#eef3ea] rounded-2xl p-5 relative border border-emerald-900/5">
+                    <div
+                        class="absolute top-6 right-6 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 cursor-pointer">
+                        <i class="ri-heart-line text-lg"></i>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden mb-3 bg-white/60 p-3">
+                        <img src="./images/product-6.jpg" alt="Fiddle Leaf Fig"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 text-sm">Fiddle Leaf Fig</h4>
+                        <p class="font-bold text-sm text-[#d96b43] mt-0.5">₹4.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-[#0d3b2e] text-white rounded-3xl p-8 sm:p-12 shadow-xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                    <div class="lg:col-span-4 space-y-5 text-center lg:text-left">
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold leading-tight">
+                            Grow Plant For<br>A Better Life
+                        </h2>
+                        <div>
+                            <a href="#about"
+                                class="inline-flex items-center gap-3 bg-[#d96b43] hover:bg-[#c45a33] text-white font-medium px-6 py-2.5 rounded-full text-sm transition">
+                                <span>Read More</span>
+                                <span
+                                    class="w-5 h-5 bg-white text-[#d96b43] rounded-full flex items-center justify-center font-bold text-xs">
+                                    <i class="ri-arrow-right-line"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 flex items-center justify-center relative py-2">
+                        <div
+                            class="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-white border-2 border-[#0d3b2e] shadow-xl shrink-0 overflow-hidden z-10 p-2.5 flex items-center justify-center -mr-8 sm:-mr-10">
+                            <img src="./images/promo-1.jpg" alt="Small Potted Plant"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div
+                            class="w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-white shadow-2xl shrink-0 overflow-hidden z-0 p-3 flex items-center justify-center">
+                            <img src="./images/promo-2.jpg" alt="Large Potted Plant"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 text-center lg:text-left">
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+                            Cultivating plants enhances well-being and contributes to a healthier environment, fostering
+                            a more fulfilling life.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center space-y-2 mb-12">
+                <h2 class="text-3xl font-serif font-bold text-[#0f2e24]">
+                    Steps to start taking care of your plants
+                </h2>
+                <p class="text-gray-600 text-xs sm:text-sm">
+                    The right solution for the care of green and smart plants
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-3xl p-7 text-center space-y-3 shadow-sm border border-emerald-900/5">
+                    <div
+                        class="w-14 h-14 mx-auto bg-[#0d3b2e] text-white rounded-full flex items-center justify-center text-2xl">
+                        <i class="ri-drop-line"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-[#0f2e24]">Humidity Control</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Effective humidity control is essential for properly caring for plants, ensuring optimal growth
+                        and overall health.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-7 text-center space-y-3 shadow-sm border border-emerald-900/5">
+                    <div
+                        class="w-14 h-14 mx-auto bg-[#0d3b2e] text-white rounded-full flex items-center justify-center text-2xl">
+                        <i class="ri-plant-line"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-[#0f2e24]">Pest Anticipation</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Implementing proactive pest anticipation measures is essential to safeguard and nurture the
+                        well-being of plants.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-7 text-center space-y-3 shadow-sm border border-emerald-900/5">
+                    <div
+                        class="w-14 h-14 mx-auto bg-[#0d3b2e] text-white rounded-full flex items-center justify-center text-2xl">
+                        <i class="ri-scissors-cut-line"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-[#0f2e24]">Pruning Weeds</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Taking care of plants involves diligently managing unwanted growth to ensure their overall
+                        health and vitality.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                <div class="lg:col-span-5 h-72 sm:h-80 lg:h-96 rounded-3xl overflow-hidden shadow-md">
+                    <img src="./images/monstera.jpg" alt="Monstera Leaves" class="w-full h-full object-cover">
+                </div>
+
+                <div class="lg:col-span-7 bg-[#e3e9de] rounded-3xl p-8 sm:p-10 space-y-5">
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-[#0f2e24] leading-tight">
+                        Come with us how to grow your plants to be better and healthier
+                    </h2>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Join us on a journey to learn the art of growing healthier and more vibrant plants. We're here
+                        to share tips and insights that will help you nurture your garden to its fullest potential. Come
+                        along with us, and let's explore the simple yet effective ways to make your plants thrive,
+                        naturally.
+                    </p>
+                    <div>
+                        <a href="#blog"
+                            class="inline-flex items-center gap-3 bg-[#d96b43] hover:bg-[#c45a33] text-white font-medium px-6 py-2.5 rounded-full text-sm transition">
+                            <span>Read More</span>
+                            <span
+                                class="w-5 h-5 bg-white text-[#d96b43] rounded-full flex items-center justify-center font-bold text-xs">
+                                <i class="ri-arrow-right-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-14">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-[#0f2e24] text-center mb-8">
+                Follow us on Instagram
+            </h2>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+                    <img src="./images/insta-1.jpg" alt="Instagram 1" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+                    <img src="./images/insta-2.jpg" alt="Instagram 2" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+                    <img src="./images/insta-3.jpg" alt="Instagram 3" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+                    <img src="./images/insta-4.jpg" alt="Instagram 4" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#0d3b2e] text-white pt-14 pb-8 border-t border-[#1a4f40]">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center space-y-6 pb-10">
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold max-w-xl mx-auto leading-snug">
+                    Stay In The Loop With Special Offers, Plant Parenting Tips, & More.
+                </h2>
+
+                <div class="flex items-center justify-center gap-3 max-w-md mx-auto px-2">
+                    <input type="email" placeholder="Email"
+                        class="w-full bg-[#16483b] border border-[#1e5849] rounded-md px-4 py-2.5 text-xs sm:text-sm text-white placeholder-gray-300 focus:outline-none">
+                    <button type="button" aria-label="Subscribe"
+                        class="bg-[#d96b43] text-white px-4 py-2.5 rounded-md hover:bg-[#c45a33] transition shrink-0 flex items-center justify-center shadow">
+                        <i class="ri-send-plane-fill text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="border-b border-[#184a3b] mb-10"></div>
+
+            <div class="hidden md:grid grid-cols-12 gap-8 pb-10 items-start">
+
+                <div class="col-span-3 space-y-3 text-xs text-gray-300 leading-relaxed pt-2">
+                    <p>123 Hello Street, CA 8034, LA</p>
+                    <p class="pt-2">+63976852918</p>
+                    <p>plants.ave@gmail.com</p>
+                </div>
+
+                <div class="col-span-6 space-y-4 text-center border-x border-[#184a3b]/60 px-6">
+                    <a href="#"
+                        class="inline-flex items-center justify-center gap-2 text-2xl font-serif font-bold text-white">
+                        <div
+                            class="w-6 h-6 rounded-full bg-[#d96b43] flex items-center justify-center text-[#0d3b2e] shrink-0 font-bold">
+                            <i class="ri-add-line text-lg font-bold text-[#0d3b2e]"></i>
+                        </div>
+                        <span>Plants Avenue</span>
+                    </a>
+
+                    <p class="text-xs text-gray-300 max-w-md mx-auto leading-relaxed">
+                        Caring for plants enhances your space with life. Whether it's a small herb garden or thriving
+                        jungle, nurturing your plants rewards you with greenery and serenity.
+                    </p>
+
+                    <div class="flex items-center justify-center gap-4 text-white pt-1">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white text-[#0d3b2e] flex items-center justify-center hover:bg-[#d96b43] hover:text-white transition text-lg">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white text-[#0d3b2e] flex items-center justify-center hover:bg-[#d96b43] hover:text-white transition text-lg">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white text-[#0d3b2e] flex items-center justify-center hover:bg-[#d96b43] hover:text-white transition text-lg">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-3 space-y-3 text-center pt-2">
+                    <h4 class="font-bold text-xs text-gray-300 uppercase tracking-widest">Pages</h4>
+                    <div class="flex flex-col space-y-1.5 text-xs text-gray-300">
+                        <a href="#home" class="hover:text-white transition">Home</a>
+                        <a href="#shop" class="hover:text-white transition">Shop</a>
+                        <a href="#about" class="hover:text-white transition">About</a>
+                        <a href="#blog" class="hover:text-white transition">Blog</a>
+                        <a href="#contact" class="hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="md:hidden text-center space-y-6">
+
+                <div class="space-y-1.5 text-xs text-gray-300 pb-6 border-b border-[#184a3b]">
+                    <p>123 Hello Street, CA 8034 , LA</p>
+                    <p>+63976852918</p>
+                    <p>plants.ave@gmail.com</p>
+                </div>
+
+                <div class="space-y-4 pb-6 border-b border-[#184a3b]">
+                    <a href="#"
+                        class="inline-flex items-center justify-center gap-2 text-xl font-serif font-bold text-white">
+                        <div
+                            class="w-5 h-5 rounded-full bg-[#d96b43] flex items-center justify-center text-[#0d3b2e] shrink-0 font-bold">
+                            <i class="ri-add-line text-base font-bold text-[#0d3b2e]"></i>
+                        </div>
+                        <span>Plants Avenue</span>
+                    </a>
+                    <p class="text-xs text-gray-300 max-w-xs mx-auto leading-relaxed">
+                        Caring for plants enhances your space with life. Whether it's a small herb garden or thriving
+                        jungle, nurturing your plants rewards you with greenery and serenity.
+                    </p>
+                    <div class="flex items-center justify-center gap-4 text-[#0d3b2e] pt-1 text-lg">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center justify-center gap-6 text-xs text-white font-medium pb-6 border-b border-[#184a3b]">
+                    <a href="#home">Home</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#shop">Sale</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#about">About</a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-[10px] sm:text-xs text-gray-300 uppercase tracking-widest font-normal">
+                © 2023 PLANTS AVENUE | ALL RIGHTS RESERVED <br class="sm:hidden"> DESIGN BY LA
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
